@@ -1,0 +1,113 @@
+---
+console.log('Hello, World!');
+---
+
+<section class="hero__main container">
+    <div class="hero__texts">
+        <h1 class="hero__title">Desarrollador web</h1>
+        <p class="hero__description">Desarrollo de aplicaciones web y móviles</p>
+        <a href="" class="hero__cta">Contactar</a>
+    </div>
+
+    <figure class="hero__picture">
+        <img src="https://miro.medium.com/v2/resize:fit:1358/1*RXr0Un0l4OfZPCdxnrY_fQ.png" class="hero__img" alt="Desarrollador web">
+    </figure>
+</section>
+<style>
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero__main {
+    display: flex;
+    height: calc(100vh - var(--hight-nav));
+    justify-content: space-between;
+    align-items: center;
+    min-height: 600px;
+}
+
+.hero__texts, .hero__picture {
+    flex: 1;
+}
+
+.hero__img {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px 0 40px 0px;
+    transition: all 0.5s;
+}
+
+.hero__img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.hero__title {
+    font-size: 3rem;
+}
+
+.hero__description {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.hero__cta {
+    background: #6c63ff;
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 0.15em;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --hight-nav: 100px;
+    }
+
+    .nav__container {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .nav__links {
+        margin-top: 1.3em;
+    }
+
+    .nav__link, .nav__link:hover {
+        padding: 10px 10px;
+    }
+
+    .hero__main {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .hero__picture {
+        order: -1;
+    }
+
+    .hero__img {
+        max-width: 380px;
+    }
+
+    .hero__texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__description {
+        font-size: 1.2rem;
+    }
+}
+</style>
