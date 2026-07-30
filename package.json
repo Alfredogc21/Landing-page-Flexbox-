@@ -10,15 +10,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.8",
-    "astro": "^6.0.8",
+    "@astrojs/check": "^0.9.10",
+    "astro": "^7.1.6",
     "typescript": "^5.9.3"
   },
   "pnpm": {
     "overrides": {
       "lodash": ">=4.17.23",
       "h3": ">=1.15.9",
-      "devalue": ">=5.6.4"
+      "devalue": ">=5.6.4",
+      "sharp": ">=0.35.0"
     },
     "ignoredBuiltDependencies": [
       "esbuild",
